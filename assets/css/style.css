@@ -2,26 +2,10 @@
   #style.css
 \*-----------------------------------*/
 
-
-/**
- * copyright 2022 @codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
-
 :root {
 
-  /**
-   * colors
-   */
+ 
 
-  /* gradient */
 
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
@@ -69,9 +53,6 @@
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
 
-  /**
-   * typography
-   */
 
   /* font-family */
   --ff-poppins: 'Poppins', sans-serif;
@@ -111,13 +92,6 @@
 
 }
 
-
-
-
-
-/*-----------------------------------*\
-  #RESET
-\*-----------------------------------*/
 
 *, *::before, *::after {
   margin: 0;
@@ -256,8 +230,8 @@ article.active {
 }
 
 .has-scrollbar::-webkit-scrollbar {
-  width: 5px; /* for vertical scrollbar */
-  height: 5px; /* for horizontal scrollbar */
+  width: 5px; 
+  height: 5px;
 }
 
 .has-scrollbar::-webkit-scrollbar-track {
@@ -710,7 +684,7 @@ main {
   font-weight: var(--fw-300);
 }
 
-/* Add these styles to your CSS */
+
 .project-item {
   position: relative;
   overflow: hidden;
@@ -719,7 +693,7 @@ main {
 .project-img {
   position: relative;
   width: 100%;
-  aspect-ratio: 2/3; /* Standard movie poster aspect ratio */
+  aspect-ratio: 2/3;
   border-radius: 16px;
   overflow: hidden;
   background: var(--eerie-black-1);
@@ -732,7 +706,6 @@ main {
   transition: var(--transition-1);
 }
 
-/* Maintain poster sizes across devices */
 @media (min-width: 768px) {
   .project-list {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -745,7 +718,7 @@ main {
   }
 }
 
-/* Optional: Add hover overlay text */
+
 .project-img::after {
   content: attr(data-title);
   position: absolute;
@@ -769,22 +742,18 @@ main {
   #RESPONSIVE
 \*-----------------------------------*/
 
-/**
- * responsive larger than 450px screen
- */
+
 
 @media (min-width: 450px) {
 
-  /**
-   * client
-   */
+  
 
   .clients-item { min-width: calc(33.33% - 10px); }
 
 
 
   /**
-   * #PORTFOLIO, BLOG 
+   * #PORTFOLIo
    */
 
   .project-img,
@@ -808,10 +777,7 @@ main {
 
   :root {
 
-    /**
-     * typography
-     */
-
+   
     --fs-1: 32px;
     --fs-2: 24px;
     --fs-3: 26px;
@@ -822,11 +788,6 @@ main {
 
   }
 
-
-
-  /**
-   * #REUSED STYLE
-   */
 
   .sidebar, article {
     width: 520px;
@@ -909,9 +870,7 @@ main {
 
 
 
-  /**
-   * #NAVBAR
-   */
+
 
   .navbar { border-radius: 20px 20px 0 0; }
 
@@ -962,12 +921,12 @@ main {
 
 .pdf-viewer {
   width: 100%;
-  height: 80vh; /* Full height of screen on mobile */
+  height: 80vh; 
   max-height: 600px;
   border: none;
 }
 
-/* Style for download button */
+
 .download-btn {
   display: inline-flex;
   align-items: center;
@@ -985,7 +944,6 @@ main {
   font-size: 18px;
 }
 
-/* Make it more responsive */
 @media screen and (max-width: 768px) {
   .pdf-viewer {
     height: 70vh;
@@ -1001,6 +959,13 @@ main {
 @media screen and (max-width: 480px) {
   .pdf-viewer {
     height: 60vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .view-btn,
+  .download-btn {
+    color: white !important;
   }
 }
 
@@ -1026,19 +991,13 @@ main {
 
 @media (min-width: 768px) {
 
-  /**
-   * REUSED STYLE
-   */
+  
 
   .sidebar, article { width: 700px; }
 
   .has-scrollbar::-webkit-scrollbar-button { width: 100px; }
 
 
-
-  /**
-   * SIDEBAR
-   */
 
   .contacts-list {
     grid-template-columns: 1fr 1fr;
